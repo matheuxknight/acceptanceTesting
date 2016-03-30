@@ -15,7 +15,7 @@ class LoginDriver extends PHPUnit_Framework_TestCase {
         $this->passwordPage = new PasswordRecoveryPage();
         $this->dashboardPage = new DashboardPage();
     }
-    
+
 	// Quickly open up the login page and read the title to check server is up
 	public function testServerUp(){
         $this->loginPage->open($this->webDriver,$this->url);
